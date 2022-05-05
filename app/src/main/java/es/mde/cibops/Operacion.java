@@ -12,7 +12,7 @@ public class Operacion {
 	//private Agente poc;
 	private Instant fechaApertura;
 	private Instant fechaCierre;
-	//private List<Evento> eventos;
+	private List<Evento> eventos;
 
 	public String getNombre() {
 		return nombre.toUpperCase();
@@ -54,13 +54,13 @@ public class Operacion {
 		this.fechaCierre = fechaCierre;
 	}
 
-//	public List<Evento> getEventos() {
-//		return eventos;
-//	}
-//
-//	public void setEventos(List<Evento> eventos) {
-//		this.eventos = eventos;
-//	}
+	public List<Evento> getEventos() {
+		return eventos;
+	}
+
+	public void setEventos(List<Evento> eventos) {
+		this.eventos = eventos;
+	}
 	
 	public Operacion() {}
 
