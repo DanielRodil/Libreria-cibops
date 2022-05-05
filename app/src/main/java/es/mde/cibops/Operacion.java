@@ -9,7 +9,7 @@ public class Operacion {
 	
 	private String nombre;
 	private String descripcion;
-	//private Agente poc;
+	private Agente poc;
 	private Instant fechaApertura;
 	private Instant fechaCierre;
 	//private List<Evento> eventos;
@@ -30,13 +30,13 @@ public class Operacion {
 		this.descripcion = descripcion;
 	}
 
-//	public Agente getPoc() {
-//		return poc;
-//	}
-//
-//	public void setPoc(Agente poc) {
-//		this.poc = poc;
-//	}
+	public Agente getPoc() {
+		return poc;
+	}
+
+	public void setPoc(Agente poc) {
+		this.poc = poc;
+	}
 
 	public Instant getFechaApertura() {
 		return fechaApertura;
