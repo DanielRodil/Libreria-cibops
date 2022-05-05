@@ -12,9 +12,7 @@ public class Agente {
 		this.tip = tip;
 	}
 	
-	public Agente() {
-		
-	}
+	public Agente() {}
 
 	public Agente(String tip) {
 		super();

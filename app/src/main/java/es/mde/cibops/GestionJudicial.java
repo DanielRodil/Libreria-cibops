@@ -12,8 +12,6 @@ public class GestionJudicial extends Evento {
 		this.organoJudicial = organoJudicial;
 	}
 
-	public GestionJudicial() {
-		
-	}
+	public GestionJudicial() {}
 	
 }

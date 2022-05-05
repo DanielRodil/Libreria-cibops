@@ -32,8 +32,6 @@ public abstract class Evento {
 //		this.agentesParticipantes = agentesParticipantes;
 //	}
 	
-	public Evento() {
-		
-	}
+	public Evento() {}
 	
 }

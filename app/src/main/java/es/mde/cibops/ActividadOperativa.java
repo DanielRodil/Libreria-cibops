@@ -12,8 +12,6 @@ public class ActividadOperativa extends Evento {
 		this.gastos = gastos;
 	}
 
-	public ActividadOperativa() {
-		
-	}
+	public ActividadOperativa() {}
 
 }

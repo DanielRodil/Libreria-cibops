@@ -62,9 +62,7 @@ public class Operacion {
 //		this.eventos = eventos;
 //	}
 	
-	public Operacion() {
-		
-	}
+	public Operacion() {}
 
 //	public List<String> getListadoEventosOperacion() {
 //		List<String> eventos = new ArrayList<String>();
