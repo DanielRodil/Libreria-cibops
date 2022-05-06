@@ -12,7 +12,7 @@ public class Operacion {
 	//private Agente poc;
 	private Instant fechaApertura;
 	private Instant fechaCierre;
-	private List<Evento> eventos;
+	private List<Evento> eventos = new ArrayList<>();
 
 	public String getNombre() {
 		return nombre.toUpperCase();
@@ -63,6 +63,18 @@ public class Operacion {
 	}
 	
 	public Operacion() {}
+
+	public Operacion(String nombre, String descripcion, Instant fechaApertura, Instant fechaCierre,
+			List<Evento> eventos) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.fechaApertura = fechaApertura;
+		this.fechaCierre = fechaCierre;
+		this.eventos = eventos;
+	}
+	
+	
 
 //	public List<String> getListadoEventosOperacion() {
 //		List<String> eventos = new ArrayList<String>();

@@ -34,4 +34,10 @@ public abstract class Evento {
 	
 	public Evento() {}
 	
+	public Evento(String nombre, String descripcion) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+	}
+		
 }
