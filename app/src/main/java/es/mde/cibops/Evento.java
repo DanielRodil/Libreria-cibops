@@ -6,7 +6,7 @@ public abstract class Evento {
 
 	private String nombre;
 	private String descripcion;
-	//private List<Agente> agentesParticipantes;
+	private List<Agente> agentesParticipantes;
 
 	public String getNombre() {
 		return nombre;
@@ -24,13 +24,13 @@ public abstract class Evento {
 		this.descripcion = descripcion;
 	}
 
-//	public List<Agente> getAgentesParticipantes() {
-//		return agentesParticipantes;
-//	}
-//
-//	public void setAgentesParticipantes(List<Agente> agentesParticipantes) {
-//		this.agentesParticipantes = agentesParticipantes;
-//	}
+	public List<Agente> getAgentesParticipantes() {
+		return agentesParticipantes;
+	}
+
+	public void setAgentesParticipantes(List<Agente> agentesParticipantes) {
+		this.agentesParticipantes = agentesParticipantes;
+	}
 	
 	public Evento() {}
 	

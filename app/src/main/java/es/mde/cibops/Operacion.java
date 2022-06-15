@@ -1,17 +1,16 @@
 package es.mde.cibops;
 
-import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class Operacion {
 	
 	private String nombre;
 	private String descripcion;
-	//private Agente poc;
-	private Instant fechaApertura;
-	private Instant fechaCierre;
+	private Agente poc;
+	private LocalDate fechaApertura;
+	private LocalDate fechaCierre;
 	private List<Evento> eventos = new ArrayList<>();
 
 	public String getNombre() {
@@ -30,27 +29,27 @@ public class Operacion {
 		this.descripcion = descripcion;
 	}
 
-//	public Agente getPoc() {
-//		return poc;
-//	}
-//
-//	public void setPoc(Agente poc) {
-//		this.poc = poc;
-//	}
+	public Agente getPoc() {
+		return poc;
+	}
 
-	public Instant getFechaApertura() {
+	public void setPoc(Agente poc) {
+		this.poc = poc;
+	}
+
+	public LocalDate getFechaApertura() {
 		return fechaApertura;
 	}
 
-	public void setFechaApertura(Instant fechaApertura) {
+	public void setFechaApertura(LocalDate fechaApertura) {
 		this.fechaApertura = fechaApertura;
 	}
 
-	public Instant getFechaCierre() {
+	public LocalDate getFechaCierre() {
 		return fechaCierre;
 	}
 
-	public void setFechaCierre(Instant fechaCierre) {
+	public void setFechaCierre(LocalDate fechaCierre) {
 		this.fechaCierre = fechaCierre;
 	}
 
@@ -64,7 +63,7 @@ public class Operacion {
 	
 	public Operacion() {}
 
-	public Operacion(String nombre, String descripcion, Instant fechaApertura, Instant fechaCierre,
+	public Operacion(String nombre, String descripcion, LocalDate fechaApertura, LocalDate fechaCierre,
 			List<Evento> eventos) {
 		super();
 		this.nombre = nombre;
