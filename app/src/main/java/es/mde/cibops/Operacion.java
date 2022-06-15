@@ -8,7 +8,7 @@ public class Operacion {
 	
 	private String nombre;
 	private String descripcion;
-//	private Agente poc;
+	private Agente poc;
 	private LocalDate fechaApertura;
 	private LocalDate fechaCierre;
 	private List<Evento> eventos = new ArrayList<>();
@@ -29,13 +29,13 @@ public class Operacion {
 		this.descripcion = descripcion;
 	}
 
-//	public Agente getPoc() {
-//		return poc;
-//	}
-//
-//	public void setPoc(Agente poc) {
-//		this.poc = poc;
-//	}
+	public Agente getPoc() {
+		return poc;
+	}
+
+	public void setPoc(Agente poc) {
+		this.poc = poc;
+	}
 
 	public LocalDate getFechaApertura() {
 		return fechaApertura;
