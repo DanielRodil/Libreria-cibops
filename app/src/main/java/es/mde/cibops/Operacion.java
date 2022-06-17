@@ -73,24 +73,4 @@ public class Operacion {
 		this.eventos = eventos;
 	}
 	
-	
-
-//	public List<String> getListadoEventosOperacion() {
-//		List<String> eventos = new ArrayList<String>();
-//		for (Evento evento : getEventos()) {
-//			eventos.add(evento.getNombre());
-//		}
-//		return eventos;
-//	}
-//	
-//	public List<Agente> getAgentesParticipantesOperacion() {
-//		HashSet<Agente> agentes = new HashSet<Agente>();
-//		agentes.add(getPoc());
-//		for (Evento evento : getEventos()) {
-//			agentes.addAll(evento.getAgentesParticipantes());
-//		}
-//		List<Agente> listaAgentes = new ArrayList<Agente>(agentes);
-//		return listaAgentes;
-//	}
-	
 }
